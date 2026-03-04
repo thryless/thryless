@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Thryless</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thryless | Inicio</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #1e293b;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+            color: #38bdf8;
+        }
+
+        p {
+            color: #94a3b8;
+            margin-bottom: 2rem;
+        }
+
+        /* Contenedor de botones */
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Estilo base de botones */
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        /* Botón Iniciar Sesión */
+        .btn-login {
+            background-color: transparent;
+            border: 2px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .btn-login:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
+        }
+
+        /* Botón Crear Cuenta */
+        .btn-account {
+            background-color: #38bdf8;
+            color: #0f172a;
+            border: 2px solid #38bdf8;
+        }
+
+        .btn-account:hover {
+            background-color: #0ea5e9;
+            border-color: #0ea5e9;
+        }
+
+        /* Botón Top Ups (Especial) */
+        .btn-topups {
+            background-color: #8b5cf6;
+            color: white;
+            border: 2px solid #8b5cf6;
+            margin-top: 10px;
+        }
+
+        .btn-topups:hover {
+            background-color: #7c3aed;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #475569;
+        }
+    </style>
 </head>
 <body>
-    <a href="https://thryless.github.io/top-ups/">Thryless Top Ups</a>
-    <a href="https://thryless.github.io/account/">Thryless Account</a>
+
+    <div class="container">
+        <h1>Thryless</h1>
+        <p>Bienvenido a la plataforma oficial</p>
+
+        <div class="button-group">
+            <a href="https://thryless.github.io/log-in" class="btn btn-login">Iniciar Sesión</a>
+            <a href="https://thryless.github.io/account" class="btn btn-account">Crear Cuenta</a>
+            <hr style="width:100%; border: 0; border-top: 1px solid #334155; margin: 10px 0;">
+            <a href="https://thryless.github.io/tp-ups" class="btn btn-topups">Thryless Top Ups</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Thryless Inc.
+        </div>
+    </div>
+
 </body>
 </html>
